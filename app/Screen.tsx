@@ -25,7 +25,7 @@ export const Screen = ({
             {layout === "full" || layout === "half_horizontal"
               ? "Updated:"
               : ""}{" "}
-            {dayjs().format("MM/DD/YYYY hh:mm a")}
+            {dayjs().format("MM/DD/YYYY hh:mma")}
           </span>
         </div>
       </div>
