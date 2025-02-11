@@ -1,4 +1,5 @@
 import spacex from "@/public/spacex.svg";
+import dayjs from "dayjs";
 import Image from "next/image";
 
 export const Screen = ({
@@ -15,12 +16,16 @@ export const Screen = ({
         <div className="title_bar">
           <Image src={spacex} className="image" alt="" />
 
-          <span className="title">SpaceX Launch Schedule</span>
+          <span className="title">
+            {layout === "full" || layout === "half_horizontal"
+              ? "SpaceX Launch Schedule"
+              : "Launch Schedule"}
+          </span>
           <span className="instance">
             {layout === "full" || layout === "half_horizontal"
               ? "Updated:"
               : ""}{" "}
-            5 min ago
+            {dayjs().format("MM/DD/YYYY hh:mm a")}
           </span>
         </div>
       </div>
