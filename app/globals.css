@@ -1,0 +1,72 @@
+* {
+  font-family: "NicoClean";
+}
+
+.image {
+  height: 28px;
+  width: 28px;
+}
+
+.main {
+  padding: 10px;
+}
+
+.card {
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.border {
+  border: 2px solid #000;
+}
+
+.card .main {
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+.card img {
+  width: 150px;
+}
+
+.card .launchName {
+  margin-bottom: 2px;
+  font-size: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card .manufacturer {
+  margin-bottom: 5px;
+  font-family: NicoPups;
+  line-height: 0.8;
+}
+
+.card .label.label--small {
+  display: inline-block;
+}
+
+.card .content {
+  padding: 4px;
+}
+
+.card .content .icon {
+  font-size: 25px;
+  margin-right: 2px;
+}
+
+.card .content .smallTitle {
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card .content .smallSubtitle {
+  font-family: NicoPups;
+}
